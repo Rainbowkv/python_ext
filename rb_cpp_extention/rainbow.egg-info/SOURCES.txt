@@ -1,0 +1,11 @@
+setup.py
+./__init__.py
+math/__init__.pyi
+math/add.pyi
+math/math_dll.cpp
+math/sub.pyi
+rainbow.egg-info/PKG-INFO
+rainbow.egg-info/SOURCES.txt
+rainbow.egg-info/dependency_links.txt
+rainbow.egg-info/not-zip-safe
+rainbow.egg-info/top_level.txt
