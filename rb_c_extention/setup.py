@@ -1,11 +1,13 @@
 from setuptools import setup, Extension
 
 
-module = Extension("math", sources = ["math.c"])
+module = Extension("rainbow_c.math", sources = ["math.c"])
 
 setup(
-    name="math",
+    name="rainbow_c",
     version="0.0.1",
-    description="A math module of c_extention of rb",
+    description="C_extention of rb",
+    packages=["rainbow_c", "rainbow_c.math"],
+    package_dir={"rainbow_c": "rainbow", "rainbow_c.math": "rainbow/math"},
     ext_modules=[module]
 )
