@@ -1,5 +1,5 @@
 #include <pybind11/pybind11.h>
-#include "C:/D/program_dev/cpp_project/include/math.h"
+#include "rb_math.h"
 
 
 PYBIND11_MODULE(math, m) {
