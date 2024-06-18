@@ -1,0 +1,10 @@
+^C:\D\PROGRAM_DEV\PYCHARMPROJECTS\PYTHON-EXT\RB_CUDA_EXTENTION\CMAKELISTS.TXT
+setlocal
+C:\Users\rainbow\anaconda3\envs\rainbow_GPT\Lib\site-packages\cmake\data\bin\cmake.exe -SC:/D/program_dev/PycharmProjects/python-ext/rb_cuda_extention -BC:/D/program_dev/PycharmProjects/python-ext/rb_cuda_extention/build --check-stamp-file C:/D/program_dev/PycharmProjects/python-ext/rb_cuda_extention/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
