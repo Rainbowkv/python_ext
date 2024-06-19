@@ -14,11 +14,17 @@ __global__ void _calculate(float* d_a, float* d_b, float* d_c, int n, int iters)
 }
 
 void calculate(int n_power, int iters_power){
+// void calculate(int n, int iters){
     int n = 1 << n_power;
     int iters = 1 << iters_power;
+
     printf("rb_cuda校验 -> n: %d, iters: %d\n", n, iters);
+
     int block_size = 256;
     int grid_size = ceil(n/block_size);
+
+    printf("grid_size: %d\n", grid_size);
+    
     int size = n*sizeof(float);
     float* h_a = (float*)malloc(size);
     float* h_b = (float*)malloc(size);

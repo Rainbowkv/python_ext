@@ -10,7 +10,7 @@ ext_modules = [
         # ["math/math.cpp", "math/add.cpp", "math/sub.cpp"],
         ["tensor_add/tensor_add.cpp"],
         include_dirs=[include_path],
-        library_dirs=[dll_path],
+        library_dirs=[dll_path],  # 去这里找相应动态库的.lib完成符号解析
         libraries=["rb_cuda"]  # language参数默认c++
     )
 ]  # 1. 简单的项目就可以这样构造
